@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Thy Pikachu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Save Thy Pikachu</h1>
+    <h2>리자몽에게 고통받고 있는 피카츄를 구해주세요!</h2>
+    <h3>리자몽에게 불찜질을 당하고 있는 피카츄를 안전한 초원으로 대피시키세요.<br>피카츄 세계의 평화는 당신의 순발력에...<br>
+        퀴즈. 남은 피카츄가 30마리 이상이라면 무슨 일이 생길까?</h3>
+
+    <div id="container">
+        <h2 id="score">구출된 피카츄 : 0</h2>
+        <h2 id="unsavedCount">남은 피카츄 : 0</h2>
+        <button id="startButton">게임 시작</button>
+
+        <div id="burnInHellBox"></div>
+        <div id="savedBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <audio id="backgroundMusic" src="audio/Littleroot.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
